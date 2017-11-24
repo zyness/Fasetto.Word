@@ -69,11 +69,10 @@
                                         </Button>
 
                                         <!-- Title -->
-                                        <Viewbox  Grid.Column="0" Grid.ColumnSpan="3" Margin="5">
+                                        <Viewbox  Grid.Column="0" Grid.ColumnSpan="3" Margin="0">
                                             <StackPanel>
                                                 <TextBlock FontFamily="{StaticResource LatoBold}" 
-                                                           FontSize="{StaticResource FontSizeLarge}"
-                                                           Margin="0,0,0,-5">
+                                                           FontSize="{StaticResource FontSizeLarge}">
                                                     <Run Text="W" 
                                                          Foreground="{StaticResource WordOrangeBrush}"/><Run Text="O" 
                                                          Foreground="{StaticResource WordBluekBrush}"/><Run Text="R" 

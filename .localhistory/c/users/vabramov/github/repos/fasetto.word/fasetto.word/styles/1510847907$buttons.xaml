@@ -101,10 +101,10 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{StaticResource WordBluekBrush }"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource WordBlueBrush}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Background" Value="{StaticResource ForegroundDarkBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource ForegoundDarkBrush}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -113,7 +113,7 @@
     </Style>
 
 
-    <!-- Text Button-->
+    <!-- Regular Button-->
     <Style x:Key="TextButton" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}">
 
         <Setter Property="Background" Value="Transparent"/>
@@ -144,10 +144,10 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Foreground" Value="{StaticResource WordOrangeBrush}"/>
+                            <Setter Property="Foreground" Value="{StaticResource WordBlueBrush}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Foreground" Value="{StaticResource ForegroundDarkBrush}"/>
+                            <Setter Property="Foreground" Value="{StaticResource ForegoundDarkBrush}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

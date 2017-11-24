@@ -25,10 +25,6 @@ namespace Fasetto.Word
         /// The radius of the edges of the window
         /// </summary>
         private int mWindowRadius = 10;
-        /// <summary>
-        /// The last known dock position
-        /// </summary>
-        private WindowDockPosition mDockPosition = WindowDockPosition.Undocked;
 
 
         #endregion
@@ -44,13 +40,10 @@ namespace Fasetto.Word
         /// </summary>
         public double WindowMinimumHeight { get; set; } = 400;
 
-
-        public bool Borderless { get { return (mWindow.WindowState == WindowState.Maximized || mDockPosition != WindowDockPosition.Undocked); } }
-
         /// <summary>
         /// The size of the resize border around the window
         /// </summary>
-        public int ResizeBorder { get { return Borderless ? 0 : 6; } }
+        public int ResizeBorder { get; set; } = 6;
 
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin

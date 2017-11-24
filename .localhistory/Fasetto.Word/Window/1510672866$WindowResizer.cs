@@ -364,5 +364,5 @@ namespace Fasetto.Word
             this.Y = y;
         }
     }
-    #endregion
+
 }
